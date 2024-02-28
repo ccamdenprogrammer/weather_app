@@ -1,8 +1,10 @@
 from geopy.geocoders import Nominatim
 import tkinter
+import customtkinter
 import geocoder
 import requests
 from pprint import pprint
+
 
 def getWeatherData():
     api_key = '4ac9c0db8de88aef04819908732a03ab' #api key for open weather map
@@ -30,16 +32,20 @@ def getWeatherData():
     print(f"The temperature in {city} feels like: {feels_like_celsius:.2f} Degrees C / {feels_like_fahrenheit:.2f} Degrees F. \n")
     print(f"The weather in {city} is: {description}. \n")
 
+
+
 def kelvin_to_CF(kelvin):
     celsius = kelvin-273.15
     fahrenheit = celsius * (9/5) + 32
     return celsius, fahrenheit
-   
+
 
 getWeatherData()
+   
 
 
-    
+
+
 
 
     
