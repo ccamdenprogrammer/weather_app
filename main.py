@@ -8,13 +8,13 @@ from pprint import pprint
 
 
 def getWeatherData():
-    api_key = '4ac9c0db8de88aef04819908732a03ab' #api key for open weather map
+    api_key = "4ac9c0db8de88aef04819908732a03ab" #api key for open weather map
     
     
     g = geocoder.ip('me') #Gets lat and long of users current location utilizing geopy 
     lat, lng = g.latlng 
     latlng = (lat, lng)
-    from geopy.geocoders import Nominatim # converts lat and long into a more readable city name
+    
     geolocator = Nominatim(user_agent="http")
     location = geolocator.reverse(latlng)
     city = (location.raw.get('address').get('city')) #city is set to the current city
