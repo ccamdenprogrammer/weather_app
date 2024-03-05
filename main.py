@@ -1,3 +1,4 @@
+
 from geopy.geocoders import Nominatim
 import tkinter
 import customtkinter
@@ -41,15 +42,3 @@ def kelvin_to_CF(kelvin):
 
 
 getWeatherData()
-   
-
-
-
-
-
-
-    
-
-
-
-
